@@ -1,11 +1,11 @@
-import {FETCH_LOCATIONS_ERROR, FETCHING, GOT_LOCATIONS} from '../Constants';
+import { FETCH_LOCATIONS_ERROR, FETCHING, GOT_LOCATIONS } from '../Constants'
 
 const initialSearchState = {
   locations: [],
   isFetching: false,
   error: false,
-  errorMessage: null,
-};
+  errorMessage: null
+}
 
 export function searchReducer(state = initialSearchState, action) {
   switch (action.type) {
@@ -15,20 +15,20 @@ export function searchReducer(state = initialSearchState, action) {
         locations: [],
         isFetching: false,
         error: true,
-        errorMessage: action.value,
-      };
+        errorMessage: action.value
+      }
     case FETCHING:
       return {
         ...state,
-        isFetching: true,
-      };
+        isFetching: true
+      }
     case GOT_LOCATIONS:
       return {
         ...state,
         locations: action.value,
         isFetching: false,
-      };
+      }
     default:
-      return state;
+      return state
   }
 }

@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native'
 
 export default styles = StyleSheet.create({
   textViewContainer: {
@@ -18,7 +18,7 @@ export default styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: 10,
     borderRadius: 14,
-    width: '90%',
+    width: '90%'
   },
   searchImage: {
     flex: 1,
@@ -28,5 +28,5 @@ export default styles = StyleSheet.create({
   searchTextInput: {
     height: 40,
     flex: 8,
-  },
-});
+  }
+})
